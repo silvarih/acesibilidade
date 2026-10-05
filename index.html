@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal de Segurança Digital - Melhor Idade</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- BARRA FIXA SUPERIOR DE ACESSIBILIDADE -->
+  <header class="barra-superior">
+    <div class="logo">
+      <span class="icone-logo">🛡️</span>
+      <span class="texto-logo">Segurança Fácil</span>
+    </div>
+
+    <div class="controles-acessibilidade">
+      <!-- Botão Alto Contraste -->
+      <button id="btn-contraste" class="btn-ctrl btn-contraste" title="Alternar Alto Contraste">
+        👁️ <span class="txt-btn">Alto Contraste</span>
+      </button>
+
+      <!-- Botão Ler em Voz Alta -->
+      <button id="btn-ouvir-site" class="btn-ctrl btn-ouvir" title="Ouvir conteúdo do site em voz alta">
+        🔊 <span class="txt-btn">Ouvir Site</span>
+      </button>
+
+      <!-- Controles de Fonte -->
+      <div class="grupo-botoes-fonte">
+        <button id="btn-diminuir-fonte" class="btn-ctrl" title="Diminuir tamanho da letra">A-</button>
+        <button id="btn-reset-fonte" class="btn-ctrl" title="Tamanho normal da letra">A</button>
+        <button id="btn-aumentar-fonte" class="btn-ctrl" title="Aumentar tamanho da letra">A+</button>
+      </div>
+
+      <!-- Botão de Ajuda (Modal) -->
+      <button id="btn-abrir-modal" class="btn-ctrl btn-ajuda-topo" title="Precisa de Ajuda?">
+        ❓ <span class="txt-btn">Ajuda</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- BANNER DE BOAS-VINDAS -->
+  <section class="banner-hero">
+    <div class="hero-conteudo">
+      <span class="tag-boas-vindas">👋 Seja bem-vindo(a)!</span>
+      <h1>Sua jornada na internet com total segurança e calma</h1>
+      <p>Aprenda de forma simples a identificar golpes, proteger seus dados e navegar sem medo nas redes sociais e bancos.</p>
+    </div>
+  </section>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="conteudo-principal">
+    <h2 class="titulo-secao">💡 Principais Cuidados para o Dia a Dia</h2>
+
+    <div class="grid-cards">
+
+      <!-- CARD 1 -->
+      <article class="card-dica">
+        <div class="card-header">
+          <span class="card-icone">💬</span>
+          <span class="badge-alerta alerta-alto">Atenção Alta</span>
+        </div>
+        <h3>Golpe do WhatsApp</h3>
+        <p>Alguém manda mensagem se passando por seu filho ou parente pedindo Pix com urgência?</p>
+        <div class="card-orientacao">
+          <strong>O que fazer:</strong> Nunca transfira sem antes LIGAR para o número antigo da pessoa para confirmar!
+        </div>
+      </article>
+
+      <!-- CARD 2 -->
+      <article class="card-dica">
+        <div class="card-header">
+          <span class="card-icone">🏦</span>
+          <span class="badge-alerta alerta-critico">Muito Perigoso</span>
+        </div>
+        <h3>Falsa Ligação do Banco</h3>
+        <p>O telefone toca e dizem que seu cartão foi clonado e que você precisa informar senhas ou fazer cancelamento?</p>
+        <div class="card-orientacao">
+          <strong>O que fazer:</strong> Desligue o telefone na hora! O banco nunca pede sua senha por ligação.
+        </div>
+      </article>
+
+      <!-- CARD 3 -->
+      <article class="card-dica">
+        <div class="card-header">
+          <span class="card-icone">🔑</span>
+          <span class="badge-alerta alerta-suave">Dica de Proteção</span>
+        </div>
+        <h3>Senhas Fortes e Seguras</h3>
+        <p>Usar data de nascimento ou '123456' torna seu celular muito fácil de ser invadido por golpistas.</p>
+        <div class="card-orientacao">
+          <strong>O que fazer:</strong> Misture letras e números. Anote suas senhas em um caderno guardado em casa.
+        </div>
+      </article>
+
+      <!-- CARD 4 -->
+      <article class="card-dica">
+        <div class="card-header">
+          <span class="card-icone">🛒</span>
+          <span class="badge-alerta alerta-suave">Dica de Proteção</span>
+        </div>
+        <h3>Compras Online Seguras</h3>
+        <p>Viu um anúncio com preço milagroso ou desconto de 90% em roupas e remédios nas redes sociais?</p>
+        <div class="card-orientacao">
+          <strong>O que fazer:</strong> Desconfie de preços baixos demais. Peça ajuda a um familiar antes de comprar.
+        </div>
+      </article>
+
+    </div>
+
+    <!-- SEÇÃO DE EMERGÊNCIA -->
+    <section class="caixa-emergencia">
+      <h2>🚨 Ficou em dúvida ou sofreu um golpe?</h2>
+      <p>Não sinta vergonha. Ligue imediatamente para quem pode ajudar:</p>
+      <div class="botoes-emergencia">
+        <div class="item-contato">
+          <span class="num-contato">190</span>
+          <span class="nome-contato">Polícia Militar</span>
+        </div>
+        <div class="item-contato">
+          <span class="num-contato">181</span>
+          <span class="nome-contato">Disque Denúncia</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL DE AJUDA -->
+  <div id="modal-ajuda" class="modal-overlay">
+    <div class="modal-caixa">
+      <div class="modal-header">
+        <h2>❓ Como usar este Portal</h2>
+        <button id="btn-fechar-x" class="btn-fechar-icone" title="Fechar Modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Criamos esta plataforma para facilitar sua leitura e navegação!</p>
+        <ul class="lista-instrucoes">
+          <li><strong>👁️ Alto Contraste:</strong> Ativa um tema de alto contraste para quem tem baixa visão.</li>
+          <li><strong>🔊 Ouvir Site:</strong> Lê o texto da página em voz alta. Clique novamente para pausar.</li>
+          <li><strong>A- / A / A+:</strong> Aumente ou diminua o tamanho da letra como preferir.</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button id="btn-fechar-modal" class="btn-fechar-modal">Compreendi, Fechar Ajuda</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- RODAPÉ -->
+  <footer class="rodape">
+    <p>🛡️ Guia de Segurança Digital para a Melhor Idade • Desenvolvido com carinho para sua proteção.</p>
+  </footer>
+
+  <!-- ARQUIVO JAVASCRIPT -->
+  <script src="script.js"></script>
+</body>
+</html>
